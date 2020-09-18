@@ -1,6 +1,6 @@
 *** Settings ***
 Resource          ../Common/common.robot
-Resource          ../Resource/Page/Page.robot
+Resource          ../Resource/Page/ImcocoPage.robot
 
 *** Test Cases ***
 Smoke Test Inaco
