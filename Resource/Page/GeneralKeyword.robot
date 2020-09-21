@@ -1,13 +1,11 @@
 *** Settings ***
 Library           SeleniumLibrary
+Library           String
 Resource          ../Variable/CustomKeyword.robot
 Resource          ../Variable/Variable.robot
 
 *** Keywords ***
-Login Imcoco
-    Go To    ${url_inaco}
-    Wait Until Element Is Visible    ${inaco_title}
-    Capture Page Screenshot  HomePage.png
+Login special campaign
     Wait Scroll Click    ${icon_masuk}
     Capture Page Screenshot  LoginPage.png
     Wait Scroll Click    ${btn_masuk}
@@ -35,7 +33,7 @@ Submit struk
 
 Check receipt upload sucsess
     Scroll Element Into View    ${get_struk_inproses}
-    ${struk_inporses_after}=    SeleniumLibrary.Get Text    ${get_struk_inproses}
+    ${struk_inporses_after}=    Get Text    ${get_struk_inproses}
     ${struk_after}=  Convert To Number    ${struk_inporses_after}
     Log    ${struk_after}
     Log    ${struk_before}
@@ -45,13 +43,23 @@ Check receipt upload sucsess
 Update user profile
     Wait Scroll Click    ${btn_profile}
     Wait Scroll Click    ${btn_edit_profile}
+    ${random_name}=  Generate Random String  8  [UPPER]
+    Wait Scroll Input    ${input_name}    ${random_name}
+    Set Test Variable    ${random_name}    ${random_name}
+    Wait Scroll Click    ${btn_simpan_profile}
+
+Check edit value
+    Wait Scroll Click    ${btn_edit_profile}
+    ${current_name}=  Get Text    ${input_name_value}
+    log  ${current_name}
+    Evaluate    ${current_name}=${random_name}
     Capture Page Screenshot    EditProfile.png
-    Go Back
 
 Check notification
+    Wait Scroll Click    ${btn_profile}
     Wait Scroll Click    ${btn_notifikasi}
     Capture Page Screenshot  NotifikasiList.png
-    Wait Scroll Click    ${btn_see_detail_1}
+    Go To    ${url_inaco_receipt}
     Wait Scroll Click    ${btn_salin}
     Capture Page Screenshot  DetailStruk.png
     Go Back

@@ -29,3 +29,9 @@ Evaluate value greater
     [Arguments]  ${value1}  ${value2}
     ${RESULT}        Evaluate    ${value1}>${value2}
     Should be True   ${RESULT}
+
+Open URL and screenshot
+    [Arguments]  ${url}  ${locator}
+    Go To    ${url}
+    Wait Until Element Is Visible    ${locator}
+    Capture Page Screenshot  HomePage.png
