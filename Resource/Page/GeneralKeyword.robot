@@ -60,6 +60,16 @@ Check notification
     Capture Page Screenshot  NotifikasiList.png
     Go Back
 
+Check value reward before
+    Wait Until Element Is Visible    ${get_reward_inproses}
+    Check value then validate    ${get_reward_inproses}  reward_before
+    Set Test Variable  ${reward_before}   ${input}
+
+Check value reward after
+    Wait Until Element Is Visible    ${get_reward_inproses}
+    Check value then validate    ${get_reward_inproses}  reward_after
+    Set Test Variable  ${reward_after}   ${input}
+
 Claim reward
     Wait Scroll Click    ${btn_hadiah}
     Wait Scroll Click    ${btn_tukar_poin}

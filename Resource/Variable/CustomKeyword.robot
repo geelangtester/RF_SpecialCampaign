@@ -5,12 +5,12 @@ Library  SeleniumLibrary
 Wait Scroll Click
     [Arguments]    ${locator}
     Scroll Element Into View    ${locator}
-    Wait Until Element Is Visible    ${locator}    5
+    Wait Until Element Is Visible    ${locator}    10
     Click Element    ${locator}
 
 Wait Scroll Input
     [Arguments]    ${locator}    ${input}
-    Wait Until Element Is Visible    ${locator}
+    Wait Until Element Is Visible    ${locator}  10
     Input Text    ${locator}    ${input}  True
 
 Check value then validate

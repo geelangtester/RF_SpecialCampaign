@@ -2,11 +2,12 @@
 #General Variable
 ${icon_masuk}  //img[@src='/static/media/image/svg/group-2.svg']
 ${btn_masuk}      //div[contains(text(),'Masuk')]    # button masuk
-@{input_no_telp}    //input[@placeholder='08121234567']    08995097652    # input phone number
+@{input_no_telp}    //input[@placeholder='08121234567']    08995097651    # input phone number
 ${btn_enter_no_telp}    //div[contains(text(),'Masuk dengan Nomor HP')]    # enter no telepon
 ${page_verif_otp}    //p[contains(text(),'Verifikasi OTP')]    # page verifikasi OTP
 ${otp_view}       //*[@class = 'android.widget.RelativeLayout']    # click button view on otp
 ${get_reward_inproses}  css=div.cyVAtb > div:nth-of-type(3) .bWfWxS
+${go_to_home}  //img[@src='/static/media/image/svg/logo-main.svg']
 
 #PAGE INACO
 ${url_inaco}      https://special.stage.pomona.id/imcoco    # URL inaco
@@ -42,8 +43,21 @@ ${btn_close}  //div[text()="Close"]
 #weekly homepage
 ${url_weekly}  https://special.stage.pomona.id/Weekly
 ${title_weekly}  //p[text()="Weekly"]
-${get_weekly_reward_inproses}  css=div.cyVAtb > div:nth-of-type(3)
 ${url_weekly_receipt}  https://special.stage.pomona.id/Weekly/receipt/5f62cd375ae7507c470f7cb8
+
+# PAGE wooah
+${url_wooah}  https://special.stage.pomona.id/wooah
+${title_wooah}  //p[text()="Wooah !"]
+${url_wooah_receipt}  https://special.stage.pomona.id/wooah/receipt/5f62ca445ae7507c470f7c7c
+
+#PAGE cashback
+${url_wooah}  https://special.stage.pomona.id/wooah
+${title_wooah}  //p[text()="Cashback"]
+${url_wooah_receipt}  https://special.stage.pomona.id/wooah/receipt/5f62ca445ae7507c470f7c7c
+
+
+
+
 
 
 #PAGE WALLS
