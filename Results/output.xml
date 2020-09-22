@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.6 on win32)" generated="20200921 10:38:40.293" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.7.6 on win32)" generated="20200922 12:40:04.432" rpa="false">
 <suite id="s1" name="SmokeTestInaco" source="D:\Github Robot Framework\RF_SpecialCampaign\Test\SmokeTestInaco.robot">
-<test id="s1-t1" name="Smoke Test Weekly">
+<test id="s1-t1" name="Smoke Test Inaco">
 <kw name="Begin Web Test" library="common" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>headlesschrome</arg>
 </arguments>
-<msg timestamp="20200921 10:38:40.522" level="INFO">Opening browser 'headlesschrome' to base url ''.</msg>
-<status status="PASS" starttime="20200921 10:38:40.521" endtime="20200921 10:38:43.656"></status>
+<msg timestamp="20200922 12:40:04.670" level="INFO">Opening browser 'headlesschrome' to base url ''.</msg>
+<status status="PASS" starttime="20200922 12:40:04.669" endtime="20200922 12:40:07.759"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200921 10:38:43.656" endtime="20200921 10:38:45.779"></status>
+<status status="PASS" starttime="20200922 12:40:07.760" endtime="20200922 12:40:09.888"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>1sec</arg>
 </arguments>
-<status status="PASS" starttime="20200921 10:38:45.780" endtime="20200921 10:38:45.782"></status>
+<status status="PASS" starttime="20200922 12:40:09.889" endtime="20200922 12:40:09.889"></status>
 </kw>
-<status status="PASS" starttime="20200921 10:38:40.521" endtime="20200921 10:38:45.782"></status>
+<status status="PASS" starttime="20200922 12:40:04.669" endtime="20200922 12:40:09.890"></status>
 </kw>
-<kw name="Open URL Weekly" library="CampaignWeekly">
+<kw name="Open URL inaco" library="CampaignImcoco">
 <kw name="Open URL and screenshot" library="CustomKeyword">
 <arguments>
-<arg>${url_weekly}</arg>
-<arg>${title_weekly}</arg>
+<arg>${url_inaco}</arg>
+<arg>${inaco_title}</arg>
 </arguments>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<msg timestamp="20200921 10:38:45.788" level="INFO">Opening url 'https://special.stage.pomona.id/Weekly'</msg>
-<status status="PASS" starttime="20200921 10:38:45.787" endtime="20200921 10:38:49.201"></status>
+<msg timestamp="20200922 12:40:09.896" level="INFO">Opening url 'https://special.stage.pomona.id/imcoco'</msg>
+<status status="PASS" starttime="20200922 12:40:09.895" endtime="20200922 12:40:12.048"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<status status="PASS" starttime="20200921 10:38:49.201" endtime="20200921 10:38:51.240"></status>
+<status status="PASS" starttime="20200922 12:40:12.048" endtime="20200922 12:40:15.323"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
 <arg>HomePage.png</arg>
 </arguments>
-<msg timestamp="20200921 10:38:52.597" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="HomePage.png"&gt;&lt;img src="HomePage.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200921 10:38:51.241" endtime="20200921 10:38:52.597"></status>
+<msg timestamp="20200922 12:40:16.668" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="HomePage.png"&gt;&lt;img src="HomePage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200922 12:40:15.324" endtime="20200922 12:40:16.668"></status>
 </kw>
-<status status="PASS" starttime="20200921 10:38:45.785" endtime="20200921 10:38:52.598"></status>
+<status status="PASS" starttime="20200922 12:40:09.893" endtime="20200922 12:40:16.669"></status>
 </kw>
-<status status="PASS" starttime="20200921 10:38:45.784" endtime="20200921 10:38:52.598"></status>
+<status status="PASS" starttime="20200922 12:40:09.892" endtime="20200922 12:40:16.669"></status>
 </kw>
 <kw name="Login special campaign" library="GeneralKeyword">
 <kw name="Wait Scroll Click" library="CustomKeyword">
@@ -67,7 +67,7 @@
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<status status="PASS" starttime="20200921 10:38:52.603" endtime="20200921 10:38:54.945"></status>
+<status status="PASS" starttime="20200922 12:40:16.670" endtime="20200922 12:40:18.998"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -75,25 +75,25 @@
 <arg>${locator}</arg>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20200921 10:38:54.946" endtime="20200921 10:38:57.021"></status>
+<status status="PASS" starttime="20200922 12:40:18.999" endtime="20200922 12:40:21.058"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200921 10:38:57.022" level="INFO">Clicking element '//img[@src='/static/media/image/svg/group-2.svg']'.</msg>
-<status status="PASS" starttime="20200921 10:38:57.022" endtime="20200921 10:38:59.155"></status>
+<msg timestamp="20200922 12:40:21.060" level="INFO">Clicking element '//img[@src='/static/media/image/svg/group-2.svg']'.</msg>
+<status status="PASS" starttime="20200922 12:40:21.059" endtime="20200922 12:40:23.226"></status>
 </kw>
-<status status="PASS" starttime="20200921 10:38:52.601" endtime="20200921 10:38:59.156"></status>
+<status status="PASS" starttime="20200922 12:40:16.670" endtime="20200922 12:40:23.227"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
 <arg>LoginPage.png</arg>
 </arguments>
-<msg timestamp="20200921 10:39:00.430" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="LoginPage.png"&gt;&lt;img src="LoginPage.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200921 10:38:59.156" endtime="20200921 10:39:00.430"></status>
+<msg timestamp="20200922 12:40:24.512" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="LoginPage.png"&gt;&lt;img src="LoginPage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200922 12:40:23.227" endtime="20200922 12:40:24.513"></status>
 </kw>
 <kw name="Wait Scroll Click" library="CustomKeyword">
 <arguments>
@@ -104,7 +104,7 @@
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<status status="PASS" starttime="20200921 10:39:00.431" endtime="20200921 10:39:02.741"></status>
+<status status="PASS" starttime="20200922 12:40:24.515" endtime="20200922 12:40:26.838"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -112,25 +112,25 @@
 <arg>${locator}</arg>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20200921 10:39:02.742" endtime="20200921 10:39:04.801"></status>
+<status status="PASS" starttime="20200922 12:40:26.839" endtime="20200922 12:40:28.891"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200921 10:39:04.802" level="INFO">Clicking element '//div[contains(text(),'Masuk')]'.</msg>
-<status status="PASS" starttime="20200921 10:39:04.802" endtime="20200921 10:39:06.924"></status>
+<msg timestamp="20200922 12:40:28.892" level="INFO">Clicking element '//div[contains(text(),'Masuk')]'.</msg>
+<status status="PASS" starttime="20200922 12:40:28.892" endtime="20200922 12:40:31.024"></status>
 </kw>
-<status status="PASS" starttime="20200921 10:39:00.430" endtime="20200921 10:39:06.924"></status>
+<status status="PASS" starttime="20200922 12:40:24.513" endtime="20200922 12:40:31.025"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
 <arg>InputPhone.png</arg>
 </arguments>
-<msg timestamp="20200921 10:39:08.192" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="InputPhone.png"&gt;&lt;img src="InputPhone.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200921 10:39:06.924" endtime="20200921 10:39:08.192"></status>
+<msg timestamp="20200922 12:40:32.280" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="InputPhone.png"&gt;&lt;img src="InputPhone.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200922 12:40:31.025" endtime="20200922 12:40:32.280"></status>
 </kw>
 <kw name="Wait Scroll Input" library="CustomKeyword">
 <arguments>
@@ -141,7 +141,7 @@
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<status status="PASS" starttime="20200921 10:39:08.195" endtime="20200921 10:39:10.268"></status>
+<status status="PASS" starttime="20200922 12:40:32.282" endtime="20200922 12:40:34.356"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -150,10 +150,10 @@
 <arg>${input}</arg>
 <arg>True</arg>
 </arguments>
-<msg timestamp="20200921 10:39:10.269" level="INFO">Typing text '08995097652' into text field '//input[@placeholder='08121234567']'.</msg>
-<status status="PASS" starttime="20200921 10:39:10.269" endtime="20200921 10:39:13.562"></status>
+<msg timestamp="20200922 12:40:34.357" level="INFO">Typing text '08995097652' into text field '//input[@placeholder='08121234567']'.</msg>
+<status status="PASS" starttime="20200922 12:40:34.356" endtime="20200922 12:40:37.632"></status>
 </kw>
-<status status="PASS" starttime="20200921 10:39:08.193" endtime="20200921 10:39:13.563"></status>
+<status status="PASS" starttime="20200922 12:40:32.281" endtime="20200922 12:40:37.633"></status>
 </kw>
 <kw name="Wait Scroll Click" library="CustomKeyword">
 <arguments>
@@ -164,7 +164,7 @@
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<status status="PASS" starttime="20200921 10:39:13.565" endtime="20200921 10:39:15.935"></status>
+<status status="PASS" starttime="20200922 12:40:37.635" endtime="20200922 12:40:39.952"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -172,25 +172,25 @@
 <arg>${locator}</arg>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20200921 10:39:15.936" endtime="20200921 10:39:17.996"></status>
+<status status="PASS" starttime="20200922 12:40:39.953" endtime="20200922 12:40:42.013"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200921 10:39:17.998" level="INFO">Clicking element '//div[contains(text(),'Masuk dengan Nomor HP')]'.</msg>
-<status status="PASS" starttime="20200921 10:39:17.997" endtime="20200921 10:39:20.100"></status>
+<msg timestamp="20200922 12:40:42.015" level="INFO">Clicking element '//div[contains(text(),'Masuk dengan Nomor HP')]'.</msg>
+<status status="PASS" starttime="20200922 12:40:42.014" endtime="20200922 12:40:44.116"></status>
 </kw>
-<status status="PASS" starttime="20200921 10:39:13.563" endtime="20200921 10:39:20.101"></status>
+<status status="PASS" starttime="20200922 12:40:37.633" endtime="20200922 12:40:44.117"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
 <arg>InputOTP.png</arg>
 </arguments>
-<msg timestamp="20200921 10:39:21.331" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="InputOTP.png"&gt;&lt;img src="InputOTP.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200921 10:39:20.101" endtime="20200921 10:39:21.332"></status>
+<msg timestamp="20200922 12:40:45.349" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="InputOTP.png"&gt;&lt;img src="InputOTP.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200922 12:40:44.117" endtime="20200922 12:40:45.350"></status>
 </kw>
 <kw name="Wait Scroll Input" library="CustomKeyword">
 <arguments>
@@ -202,7 +202,7 @@
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<status status="PASS" starttime="20200921 10:39:21.335" endtime="20200921 10:39:23.407"></status>
+<status status="PASS" starttime="20200922 12:40:45.350" endtime="20200922 12:40:47.398"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -211,10 +211,10 @@
 <arg>${input}</arg>
 <arg>True</arg>
 </arguments>
-<msg timestamp="20200921 10:39:23.409" level="INFO">Typing text '123456' into text field '//input'.</msg>
-<status status="PASS" starttime="20200921 10:39:23.408" endtime="20200921 10:39:26.627"></status>
+<msg timestamp="20200922 12:40:47.400" level="INFO">Typing text '123456' into text field '//input'.</msg>
+<status status="PASS" starttime="20200922 12:40:47.399" endtime="20200922 12:40:50.646"></status>
 </kw>
-<status status="PASS" starttime="20200921 10:39:21.332" endtime="20200921 10:39:26.627"></status>
+<status status="PASS" starttime="20200922 12:40:45.350" endtime="20200922 12:40:50.647"></status>
 </kw>
 <kw name="Wait Scroll Click" library="CustomKeyword">
 <arguments>
@@ -225,7 +225,7 @@
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<status status="PASS" starttime="20200921 10:39:26.630" endtime="20200921 10:39:28.950"></status>
+<status status="PASS" starttime="20200922 12:40:50.648" endtime="20200922 12:40:52.959"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -233,27 +233,487 @@
 <arg>${locator}</arg>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20200921 10:39:28.950" endtime="20200921 10:39:30.992"></status>
+<status status="PASS" starttime="20200922 12:40:52.960" endtime="20200922 12:40:55.015"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200921 10:39:30.993" level="INFO">Clicking element '//div[contains(text(),"Verifikasi Nomor HP")]'.</msg>
-<status status="PASS" starttime="20200921 10:39:30.993" endtime="20200921 10:39:33.129"></status>
+<msg timestamp="20200922 12:40:55.017" level="INFO">Clicking element '//div[contains(text(),"Verifikasi Nomor HP")]'.</msg>
+<status status="PASS" starttime="20200922 12:40:55.016" endtime="20200922 12:40:57.156"></status>
 </kw>
-<status status="PASS" starttime="20200921 10:39:26.629" endtime="20200921 10:39:33.130"></status>
+<status status="PASS" starttime="20200922 12:40:50.647" endtime="20200922 12:40:57.156"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
 <arg>BerhasilLogin.png</arg>
 </arguments>
-<msg timestamp="20200921 10:39:34.477" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="BerhasilLogin.png"&gt;&lt;img src="BerhasilLogin.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200921 10:39:33.130" endtime="20200921 10:39:34.477"></status>
+<msg timestamp="20200922 12:40:58.469" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="BerhasilLogin.png"&gt;&lt;img src="BerhasilLogin.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200922 12:40:57.157" endtime="20200922 12:40:58.469"></status>
 </kw>
-<status status="PASS" starttime="20200921 10:38:52.600" endtime="20200921 10:39:34.478"></status>
+<status status="PASS" starttime="20200922 12:40:16.669" endtime="20200922 12:40:58.470"></status>
+</kw>
+<kw name="Check value inaco reward before" library="CampaignImcoco">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${get_reward_inproses}</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:40:58.473" endtime="20200922 12:41:00.541"></status>
+</kw>
+<kw name="Check value then validate" library="CustomKeyword">
+<arguments>
+<arg>${get_reward_inproses}</arg>
+<arg>reward_before</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:00.544" endtime="20200922 12:41:02.868"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${input}</var>
+</assign>
+<msg timestamp="20200922 12:41:04.932" level="INFO">${input} = 92</msg>
+<status status="PASS" starttime="20200922 12:41:02.869" endtime="20200922 12:41:04.932"></status>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>${input}</arg>
+</arguments>
+<assign>
+<var>${input}</var>
+</assign>
+<msg timestamp="20200922 12:41:04.934" level="INFO">${input} = 92</msg>
+<status status="PASS" starttime="20200922 12:41:04.933" endtime="20200922 12:41:04.934"></status>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${input}</arg>
+<arg>${input}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:04.936" level="INFO">${input} = 92</msg>
+<status status="PASS" starttime="20200922 12:41:04.935" endtime="20200922 12:41:04.936"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:41:00.543" endtime="20200922 12:41:04.936"></status>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${reward_before}</arg>
+<arg>${input}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:04.941" level="INFO">${reward_before} = 92</msg>
+<status status="PASS" starttime="20200922 12:41:04.937" endtime="20200922 12:41:04.941"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:40:58.471" endtime="20200922 12:41:04.941"></status>
+</kw>
+<kw name="Upload struk" library="GeneralKeyword">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${get_struk_inproses}</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:04.944" endtime="20200922 12:41:07.016"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${get_struk_inproses}</arg>
+</arguments>
+<assign>
+<var>${struk_inporses_before}</var>
+</assign>
+<msg timestamp="20200922 12:41:09.083" level="INFO">${struk_inporses_before} = 34</msg>
+<status status="PASS" starttime="20200922 12:41:07.017" endtime="20200922 12:41:09.083"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>@{upload_struk_input}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:09.085" level="INFO">Sending D:\Github Robot Framework\RF_SpecialCampaign\struk.jpg to browser.</msg>
+<status status="PASS" starttime="20200922 12:41:09.084" endtime="20200922 12:41:11.252"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${struk_inporses_before}</arg>
+</arguments>
+<assign>
+<var>${struk_before}</var>
+</assign>
+<msg timestamp="20200922 12:41:11.254" level="INFO">${struk_before} = 34.0</msg>
+<status status="PASS" starttime="20200922 12:41:11.253" endtime="20200922 12:41:11.254"></status>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${struk_before}</arg>
+<arg>${struk_before}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:11.256" level="INFO">${struk_before} = 34.0</msg>
+<status status="PASS" starttime="20200922 12:41:11.254" endtime="20200922 12:41:11.256"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${struk_before}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:11.258" level="INFO">34.0</msg>
+<status status="PASS" starttime="20200922 12:41:11.257" endtime="20200922 12:41:11.258"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:41:04.943" endtime="20200922 12:41:11.259"></status>
+</kw>
+<kw name="Submit struk" library="GeneralKeyword">
+<kw name="Wait Scroll Click" library="CustomKeyword">
+<arguments>
+<arg>${submit_struk}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:11.263" endtime="20200922 12:41:13.572"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:13.573" endtime="20200922 12:41:15.637"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:15.638" level="INFO">Clicking element '//div[@class='basic__Wrapper-sc-1aa10sa-0 bcKsHL']//div[@id='submit-receipt-text']'.</msg>
+<status status="PASS" starttime="20200922 12:41:15.638" endtime="20200922 12:41:17.758"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:41:11.262" endtime="20200922 12:41:17.759"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>BerhasilUploadStruk.png</arg>
+</arguments>
+<msg timestamp="20200922 12:41:19.054" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="BerhasilUploadStruk.png"&gt;&lt;img src="BerhasilUploadStruk.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200922 12:41:17.760" endtime="20200922 12:41:19.054"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${text_struk_berhasil}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:21.085" level="INFO">Current page contains text 'Selamat! Struk berhasil diupload'.</msg>
+<status status="PASS" starttime="20200922 12:41:19.055" endtime="20200922 12:41:21.085"></status>
+</kw>
+<kw name="Wait Scroll Click" library="CustomKeyword">
+<arguments>
+<arg>${btn_back_from_upload_struk_succes}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:21.088" endtime="20200922 12:41:23.402"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:23.403" endtime="20200922 12:41:25.459"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:25.460" level="INFO">Clicking element '//div[contains(text(),"Kembali ke Halaman Utama")]'.</msg>
+<status status="PASS" starttime="20200922 12:41:25.460" endtime="20200922 12:41:27.595"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:41:21.086" endtime="20200922 12:41:27.596"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:41:11.261" endtime="20200922 12:41:27.596"></status>
+</kw>
+<kw name="Check receipt upload sucsess" library="GeneralKeyword">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${get_struk_inproses}</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:27.599" endtime="20200922 12:41:29.916"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${get_struk_inproses}</arg>
+</arguments>
+<assign>
+<var>${struk_inporses_after}</var>
+</assign>
+<msg timestamp="20200922 12:41:31.983" level="INFO">${struk_inporses_after} = 35</msg>
+<status status="PASS" starttime="20200922 12:41:29.917" endtime="20200922 12:41:31.983"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${struk_inporses_after}</arg>
+</arguments>
+<assign>
+<var>${struk_after}</var>
+</assign>
+<msg timestamp="20200922 12:41:31.986" level="INFO">${struk_after} = 35.0</msg>
+<status status="PASS" starttime="20200922 12:41:31.984" endtime="20200922 12:41:31.986"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${struk_after}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:31.987" level="INFO">35.0</msg>
+<status status="PASS" starttime="20200922 12:41:31.986" endtime="20200922 12:41:31.987"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${struk_before}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:31.989" level="INFO">34.0</msg>
+<status status="PASS" starttime="20200922 12:41:31.988" endtime="20200922 12:41:31.989"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${struk_before}&lt;${struk_after}</arg>
+</arguments>
+<assign>
+<var>${RESULT}</var>
+</assign>
+<msg timestamp="20200922 12:41:31.992" level="INFO">${RESULT} = True</msg>
+<status status="PASS" starttime="20200922 12:41:31.990" endtime="20200922 12:41:31.992"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${RESULT}</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:31.992" endtime="20200922 12:41:31.993"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:41:27.597" endtime="20200922 12:41:31.993"></status>
+</kw>
+<kw name="Update user profile" library="GeneralKeyword">
+<kw name="Wait Scroll Click" library="CustomKeyword">
+<arguments>
+<arg>${btn_profile}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:31.998" endtime="20200922 12:41:34.309"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:34.309" endtime="20200922 12:41:36.351"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:36.352" level="INFO">Clicking element '//img[@class='basic__ImageWrapper-sc-1aa10sa-5 eVviGw']'.</msg>
+<status status="PASS" starttime="20200922 12:41:36.352" endtime="20200922 12:41:38.534"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:41:31.996" endtime="20200922 12:41:38.535"></status>
+</kw>
+<kw name="Wait Scroll Click" library="CustomKeyword">
+<arguments>
+<arg>${btn_edit_profile}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:38.537" endtime="20200922 12:41:40.864"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:40.865" endtime="20200922 12:41:42.925"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:42.926" level="INFO">Clicking element '//div[text()="EDIT"]'.</msg>
+<status status="PASS" starttime="20200922 12:41:42.926" endtime="20200922 12:41:45.060"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:41:38.535" endtime="20200922 12:41:45.061"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>8</arg>
+<arg>[UPPER]</arg>
+</arguments>
+<assign>
+<var>${random_name}</var>
+</assign>
+<msg timestamp="20200922 12:41:45.062" level="INFO">${random_name} = PXDCZSVP</msg>
+<status status="PASS" starttime="20200922 12:41:45.061" endtime="20200922 12:41:45.062"></status>
+</kw>
+<kw name="Wait Scroll Input" library="CustomKeyword">
+<arguments>
+<arg>${input_name}</arg>
+<arg>${random_name}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:45.064" endtime="20200922 12:41:47.130"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${input}</arg>
+<arg>True</arg>
+</arguments>
+<msg timestamp="20200922 12:41:47.132" level="INFO">Typing text 'PXDCZSVP' into text field '//input[@name='name']'.</msg>
+<status status="PASS" starttime="20200922 12:41:47.131" endtime="20200922 12:41:50.514"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:41:45.063" endtime="20200922 12:41:50.514"></status>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${random_name}</arg>
+<arg>${random_name}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:50.517" level="INFO">${random_name} = PXDCZSVP</msg>
+<status status="PASS" starttime="20200922 12:41:50.515" endtime="20200922 12:41:50.517"></status>
+</kw>
+<kw name="Wait Scroll Click" library="CustomKeyword">
+<arguments>
+<arg>${btn_simpan_profile}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:50.519" endtime="20200922 12:41:52.864"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:52.866" endtime="20200922 12:41:54.926"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200922 12:41:54.927" level="INFO">Clicking element '//div[.='Simpan']'.</msg>
+<status status="PASS" starttime="20200922 12:41:54.926" endtime="20200922 12:41:57.036"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:41:50.517" endtime="20200922 12:41:57.037"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:41:31.995" endtime="20200922 12:41:57.037"></status>
+</kw>
+<kw name="Check edit value" library="GeneralKeyword">
+<kw name="Wait Scroll Click" library="CustomKeyword">
+<arguments>
+<arg>${btn_edit_profile}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:57.041" endtime="20200922 12:41:59.349"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200922 12:41:59.350" endtime="20200922 12:42:01.408"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200922 12:42:01.409" level="INFO">Clicking element '//div[text()="EDIT"]'.</msg>
+<status status="PASS" starttime="20200922 12:42:01.408" endtime="20200922 12:42:03.566"></status>
+</kw>
+<status status="PASS" starttime="20200922 12:41:57.040" endtime="20200922 12:42:03.567"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${input_name_value}</arg>
+</arguments>
+<assign>
+<var>${current_name}</var>
+</assign>
+<msg timestamp="20200922 12:42:05.626" level="INFO">${current_name} = </msg>
+<status status="PASS" starttime="20200922 12:42:03.567" endtime="20200922 12:42:05.626"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${current_name}</arg>
+</arguments>
+<msg timestamp="20200922 12:42:05.626" level="INFO"></msg>
+<status status="PASS" starttime="20200922 12:42:05.626" endtime="20200922 12:42:05.626"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${current_name}</arg>
+<arg>==</arg>
+<arg>${random_name}</arg>
+</arguments>
+<msg timestamp="20200922 12:42:05.627" level="FAIL">ValueError: dictionary update sequence element #0 has length 1; 2 is required</msg>
+<status status="FAIL" starttime="20200922 12:42:05.626" endtime="20200922 12:42:05.627"></status>
+</kw>
+<status status="FAIL" starttime="20200922 12:41:57.039" endtime="20200922 12:42:05.627"></status>
 </kw>
 <kw name="End Web Test" library="common" type="teardown">
 <kw name="Sleep" library="BuiltIn">
@@ -261,32 +721,32 @@
 <arguments>
 <arg>5sec</arg>
 </arguments>
-<msg timestamp="20200921 10:39:39.485" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200921 10:39:34.482" endtime="20200921 10:39:39.486"></status>
+<msg timestamp="20200922 12:42:10.630" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200922 12:42:05.629" endtime="20200922 12:42:10.630"></status>
 </kw>
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200921 10:39:39.486" endtime="20200921 10:39:42.540"></status>
+<status status="PASS" starttime="20200922 12:42:10.631" endtime="20200922 12:42:13.687"></status>
 </kw>
-<status status="PASS" starttime="20200921 10:39:34.480" endtime="20200921 10:39:42.541"></status>
+<status status="PASS" starttime="20200922 12:42:05.628" endtime="20200922 12:42:13.688"></status>
 </kw>
 <tags>
-<tag>Weekly</tag>
+<tag>Inaco</tag>
 </tags>
-<status status="PASS" starttime="20200921 10:38:40.520" endtime="20200921 10:39:42.543" critical="yes"></status>
+<status status="FAIL" starttime="20200922 12:40:04.668" endtime="20200922 12:42:13.689" critical="yes">ValueError: dictionary update sequence element #0 has length 1; 2 is required</status>
 </test>
-<status status="PASS" starttime="20200921 10:38:40.294" endtime="20200921 10:39:42.549"></status>
+<status status="FAIL" starttime="20200922 12:40:04.433" endtime="20200922 12:42:13.696"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0">Weekly</stat>
+<stat pass="0" fail="1">Inaco</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="SmokeTestInaco">SmokeTestInaco</stat>
+<stat pass="0" fail="1" id="s1" name="SmokeTestInaco">SmokeTestInaco</stat>
 </suite>
 </statistics>
 <errors>
